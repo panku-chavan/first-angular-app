@@ -1,0 +1,8 @@
+<div class="timer-container">
+    <div class="timer-display">{{minuts}}:{{seconds}}:{{milisec}}</div>
+        <div class="timer-controls">
+            <button (click)="startTimer()" [disabled]="isRunning">start</button>
+            <button  (click)="stopTimer()" [disabled]="!isRunning">stop</button>
+            <button  (click)="resetTimer()" [disabled]="isRunning">reset</button>
+    </div>
+</div>

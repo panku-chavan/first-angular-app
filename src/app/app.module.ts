@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { TimerComponent } from './components/timer/timer.component';
 import { HomeComponent } from './components/home/home.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StopwatchComponent } from './components/stopwatch/stopwatch.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { CounterComponent } from './components/counter/counter.component';
     NavbarComponent,
     TimerComponent,
     HomeComponent,
-    CounterComponent
+    CounterComponent,
+    StopwatchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
