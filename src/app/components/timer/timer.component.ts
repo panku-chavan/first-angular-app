@@ -6,26 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./timer.component.css']
 })
 export class TimerComponent {
-     timer=0;
-
+     timer:number=0;
+     x:any
      start=()=>{
-      const x=setInterval(()=>{
+       this.x=setInterval(()=>{
          this.timer++;
          if(this.timer==50){
-          clearInterval(x)
+          clearInterval(this.x)
         }
       },100)
 
       
      }
      reverse=()=>{
-      const x=setInterval(()=>{
+       this.x=setInterval(()=>{
          this.timer--;
          if(this.timer==-50){
-          clearInterval(x)
+          clearInterval(this.x)
         }
       },100)
 
       
      }
+     stop=()=>{
+      clearInterval(this.x)
+     }
 }
+
