@@ -1,0 +1,21 @@
+.nav span{
+    margin: 10px;
+    color: black;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.nav span:hover{
+    color: rgb(96, 58, 201);
+    font-weight: bold;
+    border-bottom: 2px solid  rgb(96, 58, 201);
+    border-radius: 2px;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(149, 177, 214);
+    border-radius: 5px;
+}
