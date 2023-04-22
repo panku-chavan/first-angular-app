@@ -12,7 +12,6 @@ export class StopwatchComponent {
   isRunning:boolean=false;
   timer:any;
 
-
   startTimer(){
     this.isRunning=true;
     this.timer=setInterval(()=>{
